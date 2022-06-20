@@ -1,0 +1,20 @@
+*{
+  text-align: center;
+  background: rgb(74, 74, 74);
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin-left: calc((100% - 1000px) / 2);
+}
+
+.bar {
+  width: 3px;
+  height: 80%;
+  min-height: 500px;
+  border-radius: 60%;
+  background: rgb(38, 38, 38);
+}
