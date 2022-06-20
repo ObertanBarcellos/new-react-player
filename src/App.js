@@ -3,18 +3,19 @@ import { BrowserRouter } from "react-router-dom";
 import './App.css';
 
 import Player from './pages/player/index';
+import Router from './pages/routers/index';
 
 const Page = (props) => {
 
   return (
     <div className='main'>
       <BrowserRouter>
-    
+        
         <Player />
-
+ 
         <div className='bar'></div>
 
-        <Player />
+        <Router />
 
       </BrowserRouter>
     </div>

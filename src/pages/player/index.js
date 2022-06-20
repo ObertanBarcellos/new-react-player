@@ -4,7 +4,7 @@ import { PageArea } from "./styled";
 const Player = () => {
     return (
         <PageArea>
-            <img src="assets/imgs/boca rosa.png" />
+            <img src={"assets/imgs/boca rosa.png"} />
             <div class="descricao">
                 <h2>---/---/---</h2>
                 <i>---/---</i>
