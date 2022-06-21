@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import { PageArea } from "./styled";
 
 import Home from "./Home";
@@ -25,6 +25,20 @@ export default () => {
                     </Switch>
                 </div>
 
+            </div>
+
+            <div className="menu-container">
+                
+                <Link to="/">
+                    <div className="button"></div>
+                </Link>
+                <Link to="">
+                    <div className="button"></div>
+                </Link>
+                <Link to="">
+                    <div className="button"></div>
+                </Link>
+                
             </div>
         </PageArea>
         

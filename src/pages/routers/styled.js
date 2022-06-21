@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const PageArea = styled.div`
-    width: 350px;
+    width: 450px;
     height: 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 
     .container-musicas{
         margin-top: 20px;
@@ -79,5 +80,24 @@ export const PageArea = styled.div`
         /* float: left; */
     }
 
+    .menu-container {
+        width:80px;
+        height:600px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        .button {
+            width:50px;
+            height:50px;
+            background-color:red;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .button:first-child {margin-top: 15px;}
+        .button:hover {background-color:black;}
+    }
     
 `;
