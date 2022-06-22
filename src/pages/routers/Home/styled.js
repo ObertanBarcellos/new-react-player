@@ -5,10 +5,11 @@ export const PageArea = styled.div`
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    
-
-    
+    .music {
+        width: 280px;
+        height: 100px;
+        border: 1px solid #ccc;
+    }
 `;

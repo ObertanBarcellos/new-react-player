@@ -4,7 +4,9 @@ import { PageArea } from "./styled";
 const Home = () => {
     return (
         <PageArea>
-           <span>Rota Home</span>
+           <div className="music">
+                
+           </div>
         </PageArea>  
     );
 }
