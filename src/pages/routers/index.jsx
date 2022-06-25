@@ -6,7 +6,7 @@ import Home from "./Home";
 import NotFound from "./NotFound";
 
 
-export default () => {
+const routes = () => {
     return (
         <PageArea>
            <div className="container-musicas">
@@ -45,3 +45,5 @@ export default () => {
     );
 
 }
+
+export default routes;

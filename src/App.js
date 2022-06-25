@@ -5,7 +5,7 @@ import './App.css';
 import Player from './pages/player/index';
 import Router from './pages/routers/index';
 
-const Page = (props) => {
+const Page = () => {
 
   return (
     <div className='main'>
