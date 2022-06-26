@@ -1,22 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
 import { BrowserRouter } from "react-router-dom";
 import './App.css';
-
 import Player from './pages/player/index';
 import Router from './pages/routers/index';
+import { RecoilRoot } from "recoil"
 
 const Page = () => {
 
   return (
     <div className='main'>
       <BrowserRouter>
-        
-        <Player />
- 
-        <div className='bar'></div>
+          <RecoilRoot>
+            <Player />
+    
+            <div className='bar'></div>
 
-        <Router />
-
+            <Router />
+          </RecoilRoot>
       </BrowserRouter>
     </div>
   )

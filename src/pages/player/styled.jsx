@@ -8,6 +8,8 @@ export const PageArea = styled.div`
     justify-content: center;
     align-items: center;
 
+    
+
     img {
         width: 300px;
         height: 300px;
@@ -21,22 +23,26 @@ export const PageArea = styled.div`
 
     .descricao {
         width: 300px;
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .duracao {
         width: 300px;
         margin-top: 25px;
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .barra {
-        width: 300px;
+        width: 100%;
         height: 6px;
-        border: 1px solid #eee;
-        background-color: rgb(0, 132, 255);
-        border-radius: 5px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+        input{
+            width: 100%;
+            height: 6px;
+        }
     }
     
     progress {
@@ -54,81 +60,72 @@ export const PageArea = styled.div`
     .player {
         width: 300px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        margin-top: 15px;
     }
 
-    .botao-play, .botao-pause {
+    .play-pause {
+        color: rgba(255, 255, 255, 0.7);
         font-size: 40px;
         cursor: pointer;
+        margin: 0 30px;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
     }
 
     .setas {
-        font-size: 20px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 29px;
         cursor: pointer;
-    }
 
-    .botao-pause {
-        display: none;
+        &:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
     }
     
     .slider-cont{
-        border-radius: 50px;
+        margin-top: 40px;
+        width: 300px;
         display: flex;
         align-items: center;    
         justify-content: center;
-        
-    }
     
-    .slider{
-        position: relative;
-        width: 200px;
-        height: 4px;
+        input {
+            width: 200px;
+            height: 4px; 
+            background: rgba(255, 255, 255, 0.2); 
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background: rgb(27, 145, 255);
+            cursor: pointer;
+            box-shadow: 0 0 2px 0 #555;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            background: rgb(27, 110, 200);
+        }
+
+        .volume {
+            margin-right: 10px;
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
     }
-    
-    .slider input[type="range"]{
-        position: absolute;
-        left: -2px;
-        top: 0;
-        width: 200px;
-        height: 4px;
-        -webkit-appearance: none;
-        background: transparent;
-        z-index: 99;
-    }
-    
-    .slider input::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        width: 15px;
-        height: 15px;
-        background-color: rgb(98, 98, 98);
-        border-radius: 10px;
-        border: 1px solid white;
-        cursor: pointer;
-    }
-    
-    .slider progress{
-        width: 200px;
-        height: 4px;
-        -webkit-appearance: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 5px;
-        overflow: hidden;
-    }
-    
-    .slider progress::-webkit-progress-bar{
-        background: rgb(27, 145, 255);
-    }
-    
-    .slider progress::-webkit-progress-value{
-        background:rgb(61, 61, 61);
-    }
-    
-    .sliderValue {
-        margin-left: 5px;
+
+    button {
+        border: none;
     }
     
 `;

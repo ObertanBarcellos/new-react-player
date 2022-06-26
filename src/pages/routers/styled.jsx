@@ -90,14 +90,32 @@ export const PageArea = styled.div`
         .button {
             width:50px;
             height:50px;
-            background-color:red;
             margin-top: 5px;
             margin-bottom: 5px;
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.1s;
+            border-radius: 10px;
+
+            .btn-icon {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 25px;
+                background-color: rgba(0, 0, 0, 0.02);
+            }
+
         }
 
         .button:first-child {margin-top: 15px;}
-        .button:hover {background-color:black;}
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+
+            .btn-icon {
+                color: rgba(16, 145, 255);
+            }
+
+        }
     }
     
 `;

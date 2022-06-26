@@ -1,12 +1,14 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { PageArea } from "./styled";
-
 import Home from "./Home";
 import NotFound from "./NotFound";
+import { BsQuestion, BsHouse, BsHeart } from "react-icons/bs";
 
+const Routes = () => {
 
-const routes = () => {
+    // const [ isActive, setIsActive ] = useState(false)
+
     return (
         <PageArea>
            <div className="container-musicas">
@@ -15,7 +17,7 @@ const routes = () => {
                     <Switch>
 
                         <Route exact path="/">
-                            <Home />
+                            <Home  />
                         </Route>
 
                         <Route>
@@ -30,13 +32,19 @@ const routes = () => {
             <div className="menu-container">
                 
                 <Link to="/">
-                    <div className="button"></div>
+                    <div className="button">
+                        <BsHouse className="btn-icon" />
+                    </div>
                 </Link>
                 <Link to="">
-                    <div className="button"></div>
+                    <div className="button" >
+                        <BsHeart className="btn-icon" />
+                    </div>
                 </Link>
                 <Link to="">
-                    <div className="button"></div>
+                    <div className="button">
+                        <BsQuestion className="btn-icon" />
+                    </div>
                 </Link>
                 
             </div>
@@ -46,4 +54,4 @@ const routes = () => {
 
 }
 
-export default routes;
+export default Routes;
