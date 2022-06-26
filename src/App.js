@@ -9,17 +9,19 @@ import { RecoilRoot } from "recoil"
 const Page = () => {
 
   return (
-    <div className='main'>
-      <BrowserRouter>
-          <RecoilRoot>
-            <Player />
-    
-            <div className='bar'></div>
+    <>
+      <div class='main'>
+        <BrowserRouter>
+            <RecoilRoot>
+              <Player />
+      
+              <div className='bar'></div>
 
-            <Router />
-          </RecoilRoot>
-      </BrowserRouter>
-    </div>
+              <Router />
+            </RecoilRoot>
+        </BrowserRouter>
+      </div>
+    </>
   )
 }
 

@@ -1,14 +1,21 @@
 *{
   text-align: center;
   background: rgb(74, 74, 74);
+  
+}
+
+body {
+  -webkit-app-region: drag;
 }
 
 .main {
   display: flex;
+  margin: auto;
   justify-content: space-around;
   align-items: center;
   max-width: 1000px;
-  margin-left: calc((100% - 1000px) / 2);
+  height: 90vh;
+  -webkit-app-region: no-drag !important;
 }
 
 .bar {

@@ -2,8 +2,7 @@ import React from "react";
 import { PageArea } from "./styled";
 import { useRecoilState } from "recoil";
 import { currentTrackIdState } from "../../../atoms/songAtom";
-import { isFavouriteState } from "../../../atoms/isFavourite"
-import { BsHeart, BsHeartFill } from "react-icons/bs"
+import { BsHeart, BsHeartFill } from "react-icons/bs";
 
 const Home = () => {
 

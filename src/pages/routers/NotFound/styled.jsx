@@ -7,6 +7,8 @@ export const PageArea = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    color: white;
 
     .span {
         font-size:30px

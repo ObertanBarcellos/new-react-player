@@ -4,6 +4,8 @@ import { PageArea } from "./styled";
 import Home from "./Home";
 import NotFound from "./NotFound";
 import { BsQuestion, BsHouse, BsHeart } from "react-icons/bs";
+import About from "./About";
+import Favourites from "./Favourites";
 
 const Routes = () => {
 
@@ -20,9 +22,18 @@ const Routes = () => {
                             <Home  />
                         </Route>
 
+                        <Route exact path="/about" >
+                            <About />
+                        </Route>
+
+                        <Route exact path="/favourites" >
+                            <Favourites />
+                        </Route>
+
                         <Route>
                             <NotFound />
                         </Route>
+                        
 
                     </Switch>
                 </div>
@@ -36,12 +47,12 @@ const Routes = () => {
                         <BsHouse className="btn-icon" />
                     </div>
                 </Link>
-                <Link to="">
+                <Link to="favourites">
                     <div className="button" >
                         <BsHeart className="btn-icon" />
                     </div>
                 </Link>
-                <Link to="">
+                <Link to="/about">
                     <div className="button">
                         <BsQuestion className="btn-icon" />
                     </div>
